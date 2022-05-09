@@ -1,13 +1,12 @@
 # interactive-webcam-art
-opencv
-camera calibrate? true or false
-pose recognition?
+This project uses body tracking through the computer webcam to generate art that is controlled through body movement. 
 
-draw something on this image to this position
+A few libraries are needed to run this code:
 
-Make WIDTH * xcoord
+Install [Mediapipe](https://google.github.io/mediapipe/) using:
+`pip install mediapipe`
+Install [Mediapipe](https://pypi.org/project/opencv-python/) using:
+`pip install opencv-python`
+Install [pygame](https://www.pygame.org/wiki/GettingStarted) using:
+`pip install pygame`
 
-drawTree(300, 550, -90, 6)
-pygame.display.flip()
-while True:
-    input(pygame.event.wait()) 
