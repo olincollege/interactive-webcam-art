@@ -21,7 +21,8 @@ artwork.py is the code for the Art class which is used to generate the tree in m
 bodytracking.py is the code that uses opencv and mediapipe to estimate body position with the webcam. converter.py takes the information from bodytracking.py and formats it in a way which is more useable when interacting with the Art class.
 
 
-https://user-images.githubusercontent.com/91572237/167382246-bd9cbc3d-e74a-48d6-a58b-6cabedd63d7f.mov
+https://user-images.githubusercontent.com/91572237/167382246-bd9cbc3d-e74a-48d6-a58b-6cabedd63d7f.mov  
+
 In this clip, I am projecting the tree onto the wall behind me as I move in front of the webcam. 
 
 This project is rather simple right now, but it can very easily be expanded upon and further developed. I would like to use body position to generate rgb values for the tree. I would also like to use body position to change the angles between the branches.  
