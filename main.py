@@ -12,7 +12,7 @@ while True:
     #landmarks is a list of all of the current landmarks
     landmarks = Body.tracking()
     nose = Convert(landmarks,0)
-    wrist = Convert(landmarks,16)
+    shoulder = Convert(landmarks,11)
     #set paramaters for the drawing
     frame = Art(-90, 5, 10, 20, 300, 550)
     #draw the tree with depth determined by the nose position
