@@ -27,4 +27,11 @@ In this clip, I am projecting the tree onto the wall behind me as I move in fron
 
 This project is rather simple right now, but it can very easily be expanded upon and further developed. I would like to use body position to generate rgb values for the tree. I would also like to use body position to change the angles between the branches.  
 
+
+https://user-images.githubusercontent.com/91572237/167407533-79d5857b-0438-4b58-9c94-4f1ddc3e5b26.mp4  
+
+
+
+
+
 My name is Ellie Ramos and I am a student at Olin College of Engineering. I love creating art and I think that this project was a great introduction to the intersection of art and technology. I am excited to continue this project and similar projects in the future. 
