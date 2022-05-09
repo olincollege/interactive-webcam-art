@@ -2,9 +2,13 @@
 Artwork contains the class Art, and will be used to generate frames
 of the tree.
 '''
-import pygame, math
+import pygame
+import math
 
 class Art:
+    '''
+    Store information about the art tree and function to draw the tree.
+    '''
     def __init__(self, angle, depth, base_length, fork_angle, x1, y1):
 
         pygame.init()

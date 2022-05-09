@@ -1,6 +1,6 @@
 '''
 Bodytracking uses OpenCV and the Mediapipe ML pipeline to identify 33
-points on the body through the webcam camera. 
+points on the body through the webcam camera.
 '''
 import cv2
 import mediapipe as mp
@@ -35,7 +35,6 @@ class Body:
                     print("Ignoring empty camera frame.")
                 # If loading a video, use 'break' instead of 'continue'.
                     continue
-            
             # To improve performance, optionally mark the image as not writeable to
             # pass by reference.
                 image.flags.writeable = False
@@ -60,45 +59,45 @@ class Body:
                 for i in range(32):
                     if results.pose_landmarks:
                         landmark_list[i] = results.pose_landmarks.landmark
-                    continue           
-            # 0 - nose
-            # 1 - left eye (inner)
-            # 2 - left eye
-            # 3 - left eye (outer)
-            # 4 - right eye (inner)
-            # 5 - right eye
-            # 6 - right eye (outer)
-            # 7 - left ear
-            # 8 - right ear
-            # 9 - mouth (left)
-            # 10 - mouth (right)
-            # 11 - left shoulder
-            # 12 - right shoulder
-            # 13 - left elbow
-            # 14 - right elbow
-            # 15 - left wrist
-            # 16 - right wrist
-            # 17 - left pinky
-            # 18 - right pinky
-            # 19 - left index
-            # 20 - right index
-            # 21 - left thumb
-            # 22 - right thumb
-            # 23 - left hip
-            # 24 - right hip
-            # 25 - left knee
-            # 26 - right knee
-            # 27 - left ankle
-            # 28 - right ankle
-            # 29 - left heel
-            # 30 - right heel
-            # 31 - left foot index
-            # 32 - right foot index
+                    continue
 
             # Flip the image horizontally for a selfie-view display.
             #cv2.imshow('MediaPipe Pose', cv2.flip(image, 1))
             #if cv2.waitKey(5) & 0xFF == 27:
             #  break
-                return landmark_list    
+                return landmark_list
         cap.release()
 
+# 0 - nose
+# 1 - left eye (inner)
+# 2 - left eye
+# 3 - left eye (outer)
+# 4 - right eye (inner)
+# 5 - right eye
+# 6 - right eye (outer)
+# 7 - left ear
+# 8 - right ear
+# 9 - mouth (left)
+# 10 - mouth (right)
+# 11 - left shoulder
+# 12 - right shoulder
+# 13 - left elbow
+# 14 - right elbow
+# 15 - left wrist
+# 16 - right wrist
+# 17 - left pinky
+# 18 - right pinky
+# 19 - left index
+# 20 - right index
+# 21 - left thumb
+# 22 - right thumb
+# 23 - left hip
+# 24 - right hip
+# 25 - left knee
+# 26 - right knee
+# 27 - left ankle
+# 28 - right ankle
+# 29 - left heel
+# 30 - right heel
+# 31 - left foot index
+# 32 - right foot index
